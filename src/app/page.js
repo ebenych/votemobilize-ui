@@ -7,7 +7,7 @@ export default function Home() {
   const [message, setMessage] = useState("");
   const [data, setData] = useState({ campaigns: [] });
 
-  const API = "https://votemobilize-ui.vercel.app"; // change later when live
+  const API = "https://api.votemobilize.ng"; // change later when live
 
   async function loadDashboard() {
     const res = await fetch(`${API}/dashboard`);
